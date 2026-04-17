@@ -45,7 +45,7 @@ def generate():
 def download_pdf():
     pdf_path = request.args.get("path")
     return send_file(pdf_path, as_attachment=True)
-
+# it will directly open after running api.py
 if __name__ == "__main__":
     webbrowser.open("http://127.0.0.1:5000")
     app.run(debug=False)
